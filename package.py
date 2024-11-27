@@ -1,6 +1,6 @@
 name = "embree"
 
-version = "3.13.5"
+version = "3.2.2"
 
 description = """
     Intel® Embree is a collection of high-performance ray tracing kernels, developed at Intel. The target users
@@ -16,11 +16,7 @@ requires = [
     "cmake-3",
 ]
 
-variants = [
-    [
-        "platform-linux",
-    ],
-]
+variants = [['platform-linux', 'arch-x86_64']]
 
 build_system = "cmake"
 
